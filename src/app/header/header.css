@@ -6,14 +6,28 @@
 }
 
 .busca {
+    border-radius: 50%;
     display: flex;
-    gap: 5px;
     width: 40%;
 }
 
 .busca input {
+    border-radius: 24px;
+    flex: 1;
     width: 100%;
     padding: 8px;
+    outline: none;
+}
+
+.busca button, .user button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .user {
@@ -25,7 +39,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'DM Sans', sans-serif; 
+    font-family: 'roboto', sans-serif; 
 }
 
   .container nav a {

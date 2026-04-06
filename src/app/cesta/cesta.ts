@@ -13,6 +13,7 @@ export class Cesta implements OnInit {
 
   itens: any[] = [];
   total: number = 0;
+  mensagem: string = '';
 
   constructor(public router: Router){
   }
@@ -42,8 +43,16 @@ export class Cesta implements OnInit {
   }
 
   finalizar() {
-    alert('Compra finalizada! Obrigada.');
+    this.mensagem = 'Compra finalizada! Obrigada.';
     this.limparCesta();
+    setTimeout(() => {
+    this.mensagem = '';
+    this.router.navigate(['/vitrine']);
+    }, 2000);
+  }
+
+  continuarComprando() {
+    this.router.navigate(['/vitrine']);
   }
 
   aumentar(item: any) {

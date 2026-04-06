@@ -1,4 +1,10 @@
 .card {
+    display: flex;
+    flex-direction: column;
     cursor: pointer;
     background-color: #fbfaf4 ;
+}
+
+.card button {
+    margin-top: auto;
 }
