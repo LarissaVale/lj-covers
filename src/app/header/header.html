@@ -1,8 +1,9 @@
 <header class="header">
-<a routerLink="/vitrine"><img src="public/logo.jpeg" width="50px" /></a>
+
+    <a routerLink="/vitrine"><img class="logo" src="public/logo.jpg" width="100px" /></a>
 
     <div class="busca">
-        <input type="text" placeholder="Buscar discos..." [(ngModel)]="busca">
+        <input type="text" placeholder="Buscar discos..." [(ngModel)]="busca" >
         <button (click)="onBuscar()"><i class="bi bi-search"></i></button>
     </div>
 

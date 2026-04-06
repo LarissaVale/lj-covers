@@ -8,3 +8,8 @@
 .card button {
     margin-top: auto;
 }
+
+.campo-busca {
+  display: flex;
+  justify-content: space-between;
+}

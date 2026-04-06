@@ -9,7 +9,7 @@ button {
   width: 30%;
   padding: 5px;
   margin-top: 5px;
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 hr {
@@ -17,5 +17,11 @@ hr {
   height: 2px;
   background-color: black;
   border: none;
-  transform: rotate(90deg); 
+  transform: rotate(90deg);
+}
+
+.container-pai {
+  display: flex;
+  margin-top: 10%;
+  align-items: center;
 }

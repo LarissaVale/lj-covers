@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
+import { Vitrine } from "../vitrine/vitrine";
 
 @Component({
   selector: 'app-header',
@@ -22,4 +23,9 @@ export class Header {
   onBuscar() {
     this.buscar.emit(this.busca);
   }
+
+  limparInput() {
+    this.busca = '';
+  }
+
 }

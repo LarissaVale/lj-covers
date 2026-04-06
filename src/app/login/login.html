@@ -1,16 +1,14 @@
 <app-header (buscar)="fazerBusca($event)"></app-header>
-<div class="container p-5 m-5">
-  <div class="row">
-
+<div class="container-pai">
     <div class="col-6 p-4 d-flex flex-column align-items-end">
       <h2>Já tenho cadastro</h2>
       <input type="email" placeholder="Email" [(ngModel)]="email" class="form-control mb-2" style="border-radius: 24px;">
-      <input type="password" placeholder="Senha" [(ngModel)]="senha" class="form-control mb-3" 
+      <input type="password" placeholder="Senha" [(ngModel)]="senha" class="form-control mb-3"
       style="border-radius: 24px;">
       <button class="btn btn-dark" style="border-radius: 24px;" (click)="entrar()">Entrar</button>
       <p *ngIf="mensagem" class="mt-2 text-dark" style="font-size: 13px;">{{ mensagem }}</p>
       <p class="mt-2" style="font-size: 13px; cursor: pointer; color: #888;">Esqueci minha senha</p>
-    </div>  
+    </div>
 
     <div class="col-1 d-flex justify-content-center">
       <div style="width: 1px; background-color: #ccc; height: 100%;"></div>
@@ -21,5 +19,4 @@
       <button (click)="irParaCadastro()" class="btn btn-outline-dark mt-3">Clique aqui</button>
     </div>
 
-  </div>
 </div>
