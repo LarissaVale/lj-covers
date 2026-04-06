@@ -64,7 +64,7 @@ export class Cesta implements OnInit {
     if (item.qtd > 1) {
       item.qtd -= 1;
     } else {
-      this.itens = this.itens.filter(i => i.codigo !== item.codigo); // remove se chegar em 0
+      this.itens = this.itens.filter(i => i.codigo !== item.codigo); 
     }
     this.salvarCesta();
   }
@@ -72,5 +72,9 @@ export class Cesta implements OnInit {
   salvarCesta() {
     localStorage.setItem('cesta', JSON.stringify(this.itens));
     this.calcularTotal();
+  }
+
+  irParaVitrine() {
+    this.router.navigate(['/vitrine'])
   }
 }
