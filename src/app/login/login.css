@@ -24,4 +24,12 @@ hr {
   display: flex;
   margin-top: 10%;
   align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+
+.container-login {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }

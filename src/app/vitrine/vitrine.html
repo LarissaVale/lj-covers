@@ -8,7 +8,7 @@
   <div class="row">
     <div *ngFor="let obj of listaBusca" class="card col-sm-12 col-md-4 col-xxl-3">
       <img [src]="'public/img' + obj.codigo + '.jpeg'" class="card-img-top mt-1 img-fluid"
-        style="height: 200px; object-fit: contain; cursor: pointer;" (click)="irParaDetalhe(obj)">
+      style="height: 200px; object-fit: contain; cursor: pointer;" (click)="irParaDetalhe(obj)">
       <h4 (click)="irParaDetalhe(obj)">{{obj.nome}}</h4>
       <div class="card-title">{{obj.nome}}</div>
       <div>R$ {{obj.valor}}</div>
