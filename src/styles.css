@@ -1,6 +1,6 @@
 body {
-    background-color: white;
-    font-family: 'Times New Roman', Times, serif;
+    background-color: #c4bbaf;
+    font-family: 'roboto', sans-serif;
     color: black;
 
 }
@@ -11,7 +11,7 @@ body {
 } */
 
 input, textarea, select {
-    background-color: lightyellow;
+    background-color: #eef0eb;
     border: white;
     color: black;
     margin: 5px;
