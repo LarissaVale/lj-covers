@@ -16,8 +16,7 @@ export class Login {
   senha: string = '';
   mensagem: string = '';
 
-  constructor(public router: Router) {
-  }
+  constructor(public router: Router) {}
 
   entrar() {
     this.mensagem = 'Login realizado com sucesso! Redirecionando...';
@@ -30,8 +29,11 @@ export class Login {
     this.router.navigate(['/cadastro']);
   }
 
+  irParaRecuperarSenha() {
+    this.router.navigate(['/recuperar-senha']);
+  }
+
   fazerBusca(busca: any) {
     this.router.navigate(['/vitrine'], { queryParams: { busca } });
   }
-
 }

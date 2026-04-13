@@ -1,23 +1,49 @@
 <header class="header">
+  <a routerLink="/vitrine">
+    <img class="logo" src="public/logo.jpg" width="100px" />
+  </a>
 
-    <a routerLink="/vitrine"><img class="logo" src="public/logo.jpg" width="100px" /></a>
+  <div class="busca">
+    <input type="text" placeholder="Buscar discos..." [(ngModel)]="busca">
+    <button (click)="onBuscar()"><i class="bi bi-search"></i></button>
+  </div>
 
-    <div class="busca">
-        <input type="text" placeholder="Buscar discos..." [(ngModel)]="busca" >
-        <button (click)="onBuscar()"><i class="bi bi-search"></i></button>
-    </div>
-
+  <div class="header-actions">
     <div class="user">
-        <button (click)="irParaLogin()"><i class="bi bi-person"></i></button>
+      <button (click)="irParaLogin()" title="Login"><i class="bi bi-person"></i></button>
     </div>
+    <button class="hamburger btn d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-expanded="false" aria-label="Menu">
+      <i class="bi bi-list"></i>
+    </button>
+  </div>
 </header>
 
 <div class="container">
-    <nav>
-        <a routerLink="/vitrine">Vitrine</a>
-        <a routerLink="/cadastro">Cadastro</a>
-        <a routerLink="/login">Login</a>
-        <a routerLink="/cesta">Cesta</a>
+  <nav class="d-none d-lg-flex nav-desktop">
+    <a routerLink="/vitrine" routerLinkActive="active">Vitrine</a>
+    <a routerLink="/cadastro" routerLinkActive="active">Cadastro</a>
+    <a routerLink="/login" routerLinkActive="active">Login</a>
+    <a routerLink="/cesta" routerLinkActive="active">
+      <i class="bi bi-bag" style="margin-right: 5px;"></i>Cesta
+    </a>
+  </nav>
+
+  <div class="collapse d-lg-none" id="navMenu">
+    <nav class="nav-mobile">
+      <a routerLink="/vitrine" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <i class="bi bi-grid"></i> Vitrine
+      </a>
+      <a routerLink="/cadastro" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <i class="bi bi-person-plus"></i> Cadastro
+      </a>
+      <a routerLink="/login" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <i class="bi bi-box-arrow-in-right"></i> Login
+      </a>
+      <a routerLink="/cesta" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <i class="bi bi-bag"></i> Cesta
+      </a>
     </nav>
+  </div>
 </div>
+
 <hr>

@@ -1,0 +1,55 @@
+.recuperar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8%;
+}
+
+.recuperar-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 40px 36px;
+  width: 400px;
+  text-align: center;
+}
+
+.icone-senha {
+  font-size: 42px;
+  margin-bottom: 16px;
+}
+
+.subtitulo {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.campo {
+  border-radius: 24px !important;
+  margin-bottom: 14px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.btn-enviar {
+  width: 100%;
+  border-radius: 24px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.btn-enviar:disabled {
+  opacity: 0.7;
+}
+
+.mensagem-ok {
+  font-size: 14px;
+  color: #2d7a3a;
+  margin-top: 14px;
+}
+
+.voltar:hover {
+  color: #1a1a1a;
+}

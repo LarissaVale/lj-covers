@@ -1,15 +1,69 @@
 .card {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    background-color: #fbfaf4 ;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  border-radius: 16px;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  overflow: hidden;
+  padding-bottom: 12px;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.11);
+}
+
+.card img {
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.04);
 }
 
 .card button {
-    margin-top: auto;
+  margin-top: auto;
+  align-self: flex-start;
+  margin-left: 12px;
+  border-radius: 24px;
+}
+
+.card h4, .card .card-title {
+  padding: 4px 12px 0;
+}
+
+.card > div {
+  padding: 0 12px;
+  font-size: 15px;
+  color: #444;
+  font-weight: 600;
+  margin-bottom: 8px;
 }
 
 .campo-busca {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  background: #fbfaf4;
+  border-radius: 12px;
+  padding: 8px 16px;
+  border: 1px solid #ece9de;
+  font-size: 14px;
+  color: #555;
+}
+
+.campo-busca button {
+  border-radius: 24px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.row {
+  gap: 0;
+  row-gap: 20px;
 }
